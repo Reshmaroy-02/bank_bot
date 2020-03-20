@@ -1,0 +1,20 @@
+
+.bg-chat{
+  background-image:url('https://secureservercdn.net/72.167.25.126/mg3.92c.myftpupload.com/wp-content/uploads/2016/06/hans-banner.jpg'); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    margin-top: 5px;
+    height: 100vh; 
+    background-position: right 2px ;
+}
+.bg-login{
+  background-image:url('https://images.tmcnet.com/tmc/misc/articles/image/2019-may/3889252999-bigstock-Isometric-Artificial-Intelligence-customer-service-SUPERSIZE.jpg'); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    margin-top: 5px;
+    height: 100vh; 
+    background-position: right 2px ;
+}
+.bg-portal{
+  background-color:peachpuff;
+}

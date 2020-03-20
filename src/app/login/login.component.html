@@ -1,0 +1,79 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<div class="container">
+	<div class="d-flex  h-100">
+		<div class="card">
+			<div class="card-header">
+				<h3>Sign In</h3>
+				<div class="d-flex justify-content-end social_icon">
+					<span><i class="fab fa-google-plus-square"></i></span>
+				</div>
+			</div>
+			<div class="card-body">
+				<form>
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-user"></i></span>
+						</div>
+						<input type="email"  class="form-control" placeholder="Enter your name"
+             required autofocus [(ngModel)]="email" name="email">
+						
+					</div>
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-key"></i></span>
+						</div>
+						<input type="password" id="inputPassword" class="form-control" placeholder="Password"
+             required [(ngModel)]="password" name="password">
+					</div>
+					<div class="row align-items-center remember">
+						<input type="checkbox">Remember Me
+					</div>
+					<div class="form-group">
+            <button class="btn float-right login_btn" type="submit" (click)="login()">Sign in</button>
+					</div>
+				</form>
+			</div>
+			<div class="card-footer">
+				<div class="d-flex justify-content-center links">
+					Don't have an account?<a href="#">Sign Up</a>
+				</div>
+				<div class="d-flex justify-content-center">
+					<a href="#">Forgot your password?</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--<div class="col-sm-12 col-md-12 col-lg-12 mx-auto">
+  <div class="card card-signin my-5">
+    <div class="card-body">
+      <h5 class="card-title text-center">Sign In</h5>
+      <form class="form">
+        <div class="form-group">
+          <input type="email"  class="form-control" placeholder="Email address"
+           required autofocus [(ngModel)]="email" name="email">-->
+          <!--<label for="inputEmail">Email address</label>-->
+       <!-- </div>
+
+        <div class="form-group">
+          <input type="password" id="inputPassword" class="form-control" placeholder="Password"
+           required [(ngModel)]="password" name="password">-->
+          <!--<label for="inputPassword">Password</label>-->
+      <!--  </div>
+
+        <div class="custom-control custom-checkbox mb-3">
+          <input type="checkbox" class="custom-control-input" id="customCheck1">
+          <label class="custom-control-label" for="customCheck1">Remember password</label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit" (click)="login()">Sign in</button>
+        <hr class="my-4">--><!--
+        <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i> Sign in with Google</button>
+        <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i class="fab fa-facebook-f mr-2"></i> Sign in with Facebook</button>
+        -->
+     <!-- </form>
+    </div>
+  </div>
+</div>
+-->

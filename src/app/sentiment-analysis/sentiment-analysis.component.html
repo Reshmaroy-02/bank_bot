@@ -1,0 +1,67 @@
+<div class="modal" id="sentimentModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Sentiment Analysis</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div *ngIf="!show">
+          <button class="btn btn-primary" (click)="getSentiment()">Show Sentiment</button>
+        </div>
+        <div *ngIf="show">
+          <button class="btn btn-primary">Hide Sentiment</button>
+        </div>
+        <div *ngIf="show" class="card">
+          <div class="card-body">
+            <span>Polite
+              <div class="progress">
+                <div class="progress-bar" [style.width.%]="(tone_dict['polite']/totalUtterence)*100"></div>
+              </div>              
+            </span>
+            <span>Impolite
+              <div class="progress">
+                <div class="progress-bar" [style.width.%]="(tone_dict['impolite']/totalUtterence)*100"></div>
+              </div>              
+            </span>
+            <span>Sad
+              <div class="progress">
+                <div class="progress-bar" [style.width.%]="(tone_dict['sad']/totalUtterence)*100"></div>
+              </div>              
+            </span>
+            <span>Satisfied
+              <div class="progress">
+                <div class="progress-bar" [style.width.%]="(tone_dict['satisfied']/totalUtterence)*100"></div>
+              </div>              
+            </span>
+            <span>Frustrated
+              <div class="progress">
+                <div class="progress-bar" [style.width.%]="(tone_dict['frustrated']/totalUtterence)*100"></div>
+              </div>              
+            </span>
+            <span>Excited
+              <div class="progress">
+                <div class="progress-bar" [style.width.%]="(tone_dict['excited']/totalUtterence)*100"></div>
+              </div>              
+            </span>
+            <span>Sympathetic
+              <div class="progress">
+                <div class="progress-bar" [style.width.%]="(tone_dict['sympathetic']/totalUtterence)*100"></div>
+              </div>              
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
