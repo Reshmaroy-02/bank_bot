@@ -34,14 +34,18 @@
         <div class="card-body msg_card_body">
             <div class="d-flex justify-content-start mb-4"
             *ngFor="let msg of data">
-            <ng-container *ngIf="msg.type==='question'">                   
+            <ng-container *ngIf="msg.type==='question'"> 
+                <div style="display: inline-block; width: 100%;">     
+                <div style="display: inline-flex; float: right;">           
                 <div class="msg_cotainer">
                     {{msg.text}}
-                    <span class="msg_time">8:40 AM, Today</span>
+                    <span class="msg_time" >8:40 AM, Today</span>
                 </div>
                 <div class="img_cont_msg">
                     <img [src]="user_dp" class="rounded-circle user_img_msg">
-                </div>               
+                </div>
+            </div>
+        </div>
             </ng-container>
             <ng-container *ngIf="msg.type==='answer'" >
                 <div class="img_cont_msg_u">
