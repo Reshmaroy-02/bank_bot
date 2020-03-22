@@ -21,7 +21,7 @@ export class LoginComponent implements OnInit {
   login(){
       localStorage.setItem('userID',this.email);
       localStorage.setItem('pass',this.password);
-      this.router.navigate(['portal']);
+      this.router.navigate(['/']);
 
 
 

@@ -1,6 +1,6 @@
 
 .bg-chat{
-  background-image:url('https://secureservercdn.net/72.167.25.126/mg3.92c.myftpupload.com/wp-content/uploads/2016/06/hans-banner.jpg'); 
+  background-image:url('https://images.unsplash.com/photo-1462206092226-f46025ffe607?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80'); 
     background-repeat: no-repeat; 
     background-size: cover;
     margin-top: 5px;
@@ -14,7 +14,4 @@
     margin-top: 5px;
     height: 100vh; 
     background-position: right 2px ;
-}
-.bg-portal{
-  background-color:peachpuff;
 }
